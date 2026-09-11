@@ -23,9 +23,9 @@ export const projetos = [
     demonstracao: '#',
     capa: 'clipboard'
   },
-  /* {
-    id: 'devblog',
-    titulo: 'DevBlog',
+   {
+    id: 'RGB',
+    titulo: 'Seletor RGB',
     categoria: 'pessoal',
     resumo: {
       pt: 'Blog de artigos com autenticação, editor de texto e sistema de comentários.',
@@ -41,6 +41,25 @@ export const projetos = [
     demonstracao: '#',
     capa: 'edit'
   },
+  {
+    id: 'CEP',
+    titulo: 'Consulta CEP',
+    categoria: 'pessoal',
+    resumo: {
+      pt: 'Blog de artigos com autenticação, editor de texto e sistema de comentários.',
+      en: 'Article blog with authentication, a text editor and a comment system.'
+    },
+    descricao: {
+      pt: 'Plataforma de publicação de artigos com autenticação de usuários, editor de texto e comentários para incentivar a troca de ideias.',
+      en: 'An article publishing platform with user authentication, a text editor and comments to encourage the exchange of ideas.'
+    },
+    tecnologias: ['Node.js', 'Express', 'PostgreSQL'],
+    imagens: [],
+    repositorio: '#',
+    demonstracao: '#',
+    capa: 'edit'
+  },
+  /*
   {
     id: 'shoplite',
     titulo: 'ShopLite',
