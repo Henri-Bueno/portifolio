@@ -8,8 +8,8 @@ export const secoes = {
     en: { titulo: 'Certificates', descricao: 'Courses and training completed.' }
   },
   sobre: {
-    pt: { titulo: 'Sobre mim' },
-    en: { titulo: 'About me' }
+    pt: { titulo: 'Sobre mim', descricao: 'Conheça minha trajetória, forma de aprender e objetivos profissionais.' },
+    en: { titulo: 'About me', descricao: 'Learn about my journey, learning approach, and professional goals.' }
   },
   habilidades: {
     pt: { titulo: 'Habilidades', descricao: 'Tecnologias que utilizo e estou evoluindo continuamente.' },
@@ -19,6 +19,11 @@ export const secoes = {
     pt: { titulo: 'Contato', descricao: 'Conecte-se comigo.' },
     en: { titulo: 'Contact', descricao: 'Connect with me.' }
   }
+};
+
+export const acoes = {
+  pt: { verMais: 'Ver mais', verCertificado: 'Ver certificado', demo: 'Demo', github: 'GitHub' },
+  en: { verMais: 'View details', verCertificado: 'View certificate', demo: 'Demo', github: 'GitHub' }
 };
 
 export const rodape = {

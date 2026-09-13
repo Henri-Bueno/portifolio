@@ -141,9 +141,9 @@ function renderizarProjetos() {
           ${projeto.tecnologias.map((tecnologia) => `<li>${tecnologia}</li>`).join('')}
         </ul>
         <div class="cartao-projeto__acoes">
-          <button type="button" class="botao botao--sm botao--secundario botao--shine cartao-projeto__ver-mais">Ver mais</button>
+          <button type="button" class="botao botao--sm botao--secundario botao--shine cartao-projeto__ver-mais">${dadosPortfolio.acoes[estado.idioma].verMais}</button>
           <a href="${projeto.demonstracao}" class="botao botao--sm botao--primario botao--gradiente">
-            Demo <svg class="icone icone--sm" aria-hidden="true"><use href="#icon-external"></use></svg>
+            ${dadosPortfolio.acoes[estado.idioma].demo} <svg class="icone icone--sm" aria-hidden="true"><use href="#icon-external"></use></svg>
           </a>
         </div>
       </div>
@@ -259,7 +259,7 @@ function renderizarCertificados() {
       <p class="cartao-certificado__data">
         <svg class="icone icone--sm" aria-hidden="true"><use href="#icon-calendar"></use></svg> ${item.data}
       </p>
-      <button type="button" class="botao botao--sm botao--secundario botao--shine cartao-certificado__botao">Ver certificado</button>
+      <button type="button" class="botao botao--sm botao--secundario botao--shine cartao-certificado__botao">${dadosPortfolio.acoes[estado.idioma].verCertificado}</button>
     </article>
   `).join('');
 }
@@ -359,10 +359,10 @@ function iniciarFiltroProjetos() {
 
 function iniciarModalCertificado() {
   const modal = document.getElementById('modal-certificado');
+  const container = document.getElementById('grade-certificados');
   const sobreposicao = document.getElementById('sobreposicao-modal-certificado');
   const botaoFechar = document.getElementById('fechar-modal-certificado');
-  const botoes = document.querySelectorAll('.cartao-certificado__botao');
-  if (!modal || !botoes.length) return;
+  if (!modal || !container || !container.querySelector('.cartao-certificado__botao')) return;
 
   const titulo = modal.querySelector('.modal__titulo');
   const instituicao = modal.querySelector('.modal__instituicao');
@@ -391,8 +391,9 @@ function iniciarModalCertificado() {
     if (ultimoFoco) ultimoFoco.focus();
   };
 
-  botoes.forEach((botao) => {
-    botao.addEventListener('click', () => abrirModal(botao.closest('.cartao-certificado')));
+  container.addEventListener('click', (event) => {
+    const botao = event.target.closest('.cartao-certificado__botao');
+    if (botao) abrirModal(botao.closest('.cartao-certificado'));
   });
 
   sobreposicao.addEventListener('click', fecharModal);
