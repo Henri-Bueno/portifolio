@@ -17,11 +17,10 @@ export const projetos = [
     pt: 'Primeiro projeto em equipe utilizando Scrum, desenvolvido como parte de uma Atividade Baseada em Projeto (ABP). Atuei como Product Owner, participando da estruturação do projeto, organização e acompanhamento das atividades, definição de prioridades e documentação. Ao longo de três sprints, a equipe desenvolveu e concluiu um portal de certificação em metodologias ágeis, aplicando conceitos de desenvolvimento web, banco de dados, modelagem e práticas ágeis.',
     en: 'My first team project using Scrum, developed as part of a Project-Based Learning activity. I worked as Product Owner, contributing to project structuring, task organization and tracking, prioritization, and documentation. Across three sprints, the team developed and completed a certification portal focused on agile methodologies, applying web development, database, modeling, and agile practices.'
   },
-  tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'PostgreSQL', 'Figma', 'Git', 'GitHub', 'UML', 'Scrum'],
+  tecnologias: ['HTML5', 'CSS', 'JavaScript', 'Node.js', 'PostgreSQL', 'Figma', 'GitHub', 'UML', 'Scrum'],
   imagens: ['assets/projetos/abp1/inicio.png', 'assets/projetos/abp1/cadastro.png', 'assets/projetos/abp1/questoes.png'],
-  repositorio: '#',
-  demonstracao: '#',
-  capa: 'edit'
+  repositorio: 'https://github.com/teamzerodsm/ABP-1DSM',
+  demonstracao: 'https://abp-1dsm.onrender.com/',
 },
   
 {
@@ -39,7 +38,7 @@ export const projetos = [
   tecnologias: ['React', 'TypeScript', 'Vite', 'CSS'],
   imagens: ['assets/projetos/RGB-lab/inicio.png','assets/projetos/RGB-lab/exemplo.png','assets/projetos/RGB-lab/testes.png'],
   repositorio: 'https://github.com/Henri-Bueno/RGB-lab',
-  demonstracao: '#',
+  demonstracao: 'https://rgb-lab-mu.vercel.app/',
   capa: 'edit'
 },
   {
@@ -55,10 +54,9 @@ export const projetos = [
     en: 'Web application created to simplify ZIP code and address searches, allowing users to find address information using a ZIP code or locate ZIP codes through details such as state, city, neighborhood, and street.'
   },
   tecnologias: ['Node.js', 'Express', 'Dotenv', 'HTML5', 'CSS3', 'JavaScript', 'ViaCEP'],
-  imagens: ['assets/projetos/busca-CEP/endereco.png','assets/projetos/busca-CEP/exemplo_2.png', 'assets/projetos/busca-CEP/inicio.png', 'assets/projetos/busca-CEP/exemplo_1.png'],
+  imagens: ['assets/projetos/busca-CEP/inicio.png', 'assets/projetos/busca-CEP/endereco.png','assets/projetos/busca-CEP/exemplo_2.png', 'assets/projetos/busca-CEP/exemplo_1.png'],
   repositorio: 'https://github.com/Henri-Bueno/Busca-CEP',
-  demonstracao: '#',
-  capa: 'clipboard'
+  demonstracao: 'https://busca-cep-onuf.vercel.app/',
 }
   /*
   {
@@ -77,6 +75,5 @@ export const projetos = [
     imagens: [],
     repositorio: '#',
     demonstracao: '#',
-    capa: 'cart'
   } */
 ];
